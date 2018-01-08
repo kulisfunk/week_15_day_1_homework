@@ -8,7 +8,8 @@ class MovieBox extends React.Component {
     return (
       <div className="movie-box">
        IMDB movie list
-       <MovieList /> 
+       <MovieList />
+       <button onClick={this.getShowtimes}> Get Showtimes</button>
 
       </div>
     )

@@ -8,6 +8,10 @@ class MovieList extends React.Component {
     <div className="movie-list">
      this is a movie list
      <Movie />
+     <Movie />
+     <Movie />
+     <button onClick={this.showMoreMovies}>See more opening this week</button>
+
     </div>
   )}
 }
