@@ -4,12 +4,14 @@ import Movie from './Movie';
 
 class MovieList extends React.Component {
   render() {
+    const movieInfo = this.props.data.map(movie => {
+      return (
+        <Movie title={movie.title} key={movie.id} />
+      )
+    })
     return (
     <div className="movie-list">
-     this is a movie list
-     <Movie />
-     <Movie />
-     <Movie />
+     {movieInfo}
      <button onClick={this.showMoreMovies}>See more opening this week</button>
 
     </div>

@@ -5,7 +5,7 @@ class Movie extends React.Component {
   render() {
     return (
       <div className="movie">
-       I am a movie
+       <h4>{this.props.title}</h4>
       </div>
     )
   }
